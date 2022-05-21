@@ -15,6 +15,9 @@ import lanche3 from './img/lanche3.png';
 import lanche4 from './img/lanche4.png';
 import Login from './login';
 
+import Cadastrar from './src/components/Cadastrar/cadastrar';
+import Listagem from './src/components/Listar/listagem';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -168,19 +171,11 @@ function Home() {
 }
 
 function Produtos() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-
-    </View>
-  );
+  return <Cadastrar />
 }
 
 function Listar() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-
-    </View>
-  );
+  return <Listagem />
 }
 
 function Contato() {
