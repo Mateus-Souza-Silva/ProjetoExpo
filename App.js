@@ -16,7 +16,7 @@ import lanche4 from './img/lanche4.png';
 import Login from './login';
 
 import Cadastrar from './src/components/Cadastrar/cadastrar';
-import Listagem from './src/components/Listar/listagem';
+import Api from './src/Api/App';
 
 
 const styles = StyleSheet.create({
@@ -175,7 +175,7 @@ function Produtos() {
 }
 
 function Listar() {
-  return <Listagem />
+  return <Api />
 }
 
 function Contato() {
@@ -242,6 +242,4 @@ function Appthree() {
       />
     </Tab.Navigator>
   );
-
-
 }

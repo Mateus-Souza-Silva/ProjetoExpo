@@ -60,7 +60,7 @@ export default function Login({ changeStatus }) {
             </View>
             <TouchableOpacity
                     style={[styles.handleLogin,
-                    { backgroundColor: type === 'login' ? '#3ea6f2' : '#B7B7B7', borderRadius: 20, textAlign: 'center', height:20}]}
+                    { backgroundColor: type === 'login' ? '#3ea6f2' : '#B7B7B7', borderRadius: 20, textAlign: 'center', height:30, padding:5}]}
                     onPress={handleLogin}
                 >
                     <Text style={styles.loginText}>

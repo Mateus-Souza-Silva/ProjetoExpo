@@ -6,37 +6,10 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function Listagem({ data, deleteItem, editItem }) {
 
-    /*const [lanches, setLanches] = useState([]);
-    const [loaging, setLoading] = useState(true);
-
-    useEffect(() => {
-
-        //listar dados ao cadastrar
-        async function dados() {
-            await firebase.database().ref('lanches').on('value', (snapshot) => {
-                setLanches([]);
-
-                snapshot.forEach((chilItem) => {
-                    let data ={
-                        key: chilItem.key,
-                        descricao: chilItem.val().descricao,
-                        tamanho: chilItem.val().tamanho,
-                        vista: chilItem.val().vista,
-                        prazo: chilItem.val().prazo
-                    };
-
-                    setLanches(oldArray => [...oldArray, data].reverse());
-                })
-                setLoading(false);
-            })
-        }
-        dados();
-    }, []);*/
-
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Lanche: {data.descricao}</Text>
             <Text style={styles.text}>Tamanho: {data.tamanho}</Text>
+            <Text style={styles.text}>Lanche: {data.descricao}</Text>
             <Text style={styles.text}>Valor à Vista(R$): {data.vista}</Text>
             <Text style={styles.text}>Valor à Prazo: {data.prazo}</Text>
 
